@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block body %}
+    <h2>{{the_title}}</h2>
+    <form action="/calculate/" method="post">
+        <table>
+            <p>Use this form to submit the data to calculate the perimeter of Square</p>
+            <tr>
+                <td>a:</td>
+                <td><input type="number" name="a"></input></td>
+            </tr>
+	    	<p>When you�re ready, click this button</p>
+		<p><input type="submit" name="btn_calculate" value="calculate"></input></p>
+        </table>
+        </form>
+{% endblock %}
